@@ -1,4 +1,4 @@
-# 🐘 Horton
+# 📊 Tables
 
 > **Type-safe PostgreSQL schema to Go code generator**
 
@@ -6,7 +6,7 @@ Transform your PostgreSQL database schemas into elegant, type-safe Go code with 
 
 [![Go Version](https://img.shields.io/badge/go-%3E%3D1.19-blue.svg)](https://golang.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/yourusername/horton)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/mymyka/tables)
 
 ---
 
@@ -26,13 +26,13 @@ Transform your PostgreSQL database schemas into elegant, type-safe Go code with 
 ### Installation
 
 ```bash
-go install github.com/yourusername/horton@latest
+go install github.com/mymyka/tables/cmd/tables@latest
 ```
 
 ### Basic Usage
 
 ```bash
-horton --db "host=localhost port=5432 user=postgres password=postgres dbname=mydb sslmode=disable" --output gen/tables
+tables --db "host=localhost port=5432 user=postgres password=postgres dbname=mydb sslmode=disable" --output gen/tables
 ```
 
 ---
@@ -168,20 +168,20 @@ host=localhost port=5432 user=username password=password dbname=database sslmode
 ### Advanced Usage
 ```bash
 # Generate only specific tables
-horton --db "connection_string" --output gen/tables --include "users,orders,products"
+tables --db "connection_string" --output gen/tables --include "users,orders,products"
 
 # Exclude system tables
-horton --db "connection_string" --output gen/tables --exclude "migrations,schema_versions"
+tables --db "connection_string" --output gen/tables --exclude "migrations,schema_versions"
 
 # Custom package prefix
-horton --db "connection_string" --output gen/tables --package-prefix "model"
+tables --db "connection_string" --output gen/tables --package-prefix "model"
 ```
 
 ---
 
 ## 🏗️ Project Structure
 
-After running Horton, your project structure will look like:
+After running Tables, your project structure will look like:
 
 ```
 your-project/
@@ -242,5 +242,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <strong>Made with 🐘 by developers, for developers</strong>
+  <strong>Made with 📊 by developers, for developers</strong>
 </div>
