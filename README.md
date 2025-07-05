@@ -165,18 +165,6 @@ if user.GoogleUserId != nil {
 host=localhost port=5432 user=username password=password dbname=database sslmode=disable
 ```
 
-### Advanced Usage
-```bash
-# Generate only specific tables
-tables --db "connection_string" --output gen/tables --include "users,orders,products"
-
-# Exclude system tables
-tables --db "connection_string" --output gen/tables --exclude "migrations,schema_versions"
-
-# Custom package prefix
-tables --db "connection_string" --output gen/tables --package-prefix "model"
-```
-
 ---
 
 ## 🏗️ Project Structure
