@@ -3,7 +3,8 @@ package parser
 import (
 	"database/sql"
 	"fmt"
-	"tables/pkg/schema"
+
+	"github.com/mymyka/tables/pkg/schema"
 )
 
 type SchemaParser struct {

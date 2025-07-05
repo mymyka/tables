@@ -1,4 +1,4 @@
-module tables
+module github.com/mymyka/tables
 
 go 1.24.2
 

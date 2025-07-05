@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"tables/internal/builder"
-	"tables/internal/parser"
-	"tables/internal/writer"
+
+	"github.com/mymyka/tables/internal/builder"
+	"github.com/mymyka/tables/internal/parser"
+	"github.com/mymyka/tables/internal/writer"
 
 	_ "github.com/lib/pq"
 	"github.com/spf13/cobra"

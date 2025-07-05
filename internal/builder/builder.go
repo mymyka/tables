@@ -2,8 +2,9 @@ package builder
 
 import (
 	"strings"
-	"tables/pkg/schema"
 	"unicode"
+
+	"github.com/mymyka/tables/pkg/schema"
 )
 
 func Build(tables []schema.Table) map[string]string {
