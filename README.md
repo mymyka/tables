@@ -1,4 +1,4 @@
-# 📊 Tables
+# 📊 Tables (POC not for production)
 
 > **Type-safe PostgreSQL schema to Go code generator**
 
